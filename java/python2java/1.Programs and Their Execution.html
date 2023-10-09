@@ -1,0 +1,202 @@
+
+<!-- saved from url=(0060)http://kennethalambert.com/pythontojava/ProgramExecution.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=macintosh">
+<meta name="Title" content="Programs and Their Execution">
+<meta name="Keywords" content="">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="http://kennethalambert.com/pythontojava/ProgramExecution_files/filelist.xml">
+<title>Programs and Their Execution</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Ken Lambert</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Ken Lambert</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:Created>2007-04-27T13:15:00Z</o:Created>
+  <o:LastSaved>2007-04-27T13:15:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Company>Washington and Lee University</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:Version>11.768</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Times New Roman";
+	panose-1:0 2 2 6 3 5 4 5 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:50331648 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:0 2 11 6 4 3 5 4 4 2;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:50331648 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{font-size:10.0pt;
+	font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050">
+  <o:colormenu v:ext="edit" fillcolor="#f9c"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#ff99cc" lang="EN-US" link="blue" vlink="purple" style="tab-interval:
+.5in">
+
+<div class="Section1">
+
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:18.0pt;font-family:Verdana">Programs and Their Execution<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<div align="center">
+
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;
+ mso-padding-alt:0in 20.15pt 0in 5.75pt">
+ <tbody><tr>
+  <td width="221" valign="top" style="width:221.4pt;background:#99CCFF;padding:
+  0in 20.15pt 0in 5.75pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:Verdana"><b>Python</b></span><b><o:p></o:p></b></p>
+  </td>
+  <td width="221" valign="top" style="width:221.4pt;background:#FFFF99;padding:
+  0in 20.15pt 0in 5.75pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:Verdana"><b>Java</b></span><b><o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="221" valign="top" style="width:221.4pt;background:#99CCFF;padding:
+  0in 20.15pt 0in 5.75pt">
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana">Programs consist of
+  modules.<span style="mso-spacerun: yes">&nbsp; </span>Modules in turn can
+  contain statements, function definitions, and/or class definitions.<span style="mso-spacerun: yes">&nbsp; </span>Each module is associated with a
+  source file (<b>.py</b></span><span style="font-family:Verdana"> extension)
+  and possibly a byte code file (<b>.pyc</b></span><span style="font-family:
+  Verdana"> extension). <o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana">An interpreter called a
+  Python virtual machine (PVM) translates Python source files to byte code
+  during execution.<span style="mso-spacerun: yes">&nbsp; </span>The PVM may
+  save the corresponding byte code in files for subsequent executions.</span><o:p></o:p></p>
+  </td>
+  <td width="221" valign="top" style="width:221.4pt;background:#FFFF99;padding:
+  0in 20.15pt 0in 5.75pt">
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana">Programs consist of
+  interfaces and classes.<span style="mso-spacerun: yes">&nbsp;
+  </span>Interfaces and classes are contained in source files (<b>.java</b></span><span style="font-family:Verdana"> extension).<span style="mso-spacerun:
+  yes">&nbsp; </span>A source file compiles into one or more executable byte
+  code files (<b>.class</b></span><span style="font-family:Verdana">
+  extension).<o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana">Classes and interfaces
+  can be part of a package.<span style="mso-spacerun: yes">&nbsp; </span>A
+  package is a bit like a module, from which any resources can be
+  imported.<span style="mso-spacerun: yes">&nbsp; </span>The byte code files
+  for a package are usually contained in a directory whose name is the package
+  name.<span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+  <p class="MsoNormal"><span style="font-family:Verdana">Programs must first be
+  compiled before they can be executed.<span style="mso-spacerun: yes">&nbsp;
+  </span>Programs are either applets or applications.<span style="mso-spacerun:
+  yes">&nbsp; </span>Applets are programs that run in a Web browser.<span style="mso-spacerun: yes">&nbsp; </span>Applications are programs that run on
+  a standalone computer.<span style="mso-spacerun: yes">&nbsp; </span>In either
+  case, Java programs execute in an interpreter called a Java virtual machine
+  (JVM).</span><o:p></o:p></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<div align="center">
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ccffcc" style="background:
+ #CCFFCC;border-collapse:collapse;mso-padding-alt:0in 5.4pt 0in 5.4pt">
+ <tbody><tr>
+  <td valign="top" style="padding:0in 77.75pt 0in 77.75pt">
+  <p class="MsoNormal"><span style="font-size:16.0pt"><a href="http://kennethalambert.com/pythontojava/index.htm"><span style="font-family:Verdana">Previous</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="padding:0in 77.75pt 0in 77.75pt">
+  <p class="MsoNormal"><span style="font-size:16.0pt"><a href="http://kennethalambert.com/pythontojava/index.htm"><span style="font-family:Verdana">Index</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="padding:0in 77.75pt 0in 77.75pt">
+  <p class="MsoNormal"><span style="font-size:16.0pt"><a href="http://kennethalambert.com/pythontojava/RunningAProgram.htm"><span style="font-family:Verdana">Next</span></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+</div>
+
+
+
+
+</body></html>
